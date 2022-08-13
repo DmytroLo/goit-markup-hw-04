@@ -50,7 +50,7 @@ section {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px  solid red;
+   
     
    
 }
@@ -315,6 +315,7 @@ background-color: #188CE8;
   /* ---------------employees---------- */
 .employees {
     background-color:var(--secondary-background-color );
+   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .employees-list {
     display: flex;
@@ -530,7 +531,10 @@ outline: 1px solid red;
     }
     .filter-item:nth-child(n+2) {
         margin-left: 8px;
-       
+    }
+    .filter-item :hover,
+    .filter-item :focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .filter-btn {
         font-family: 'Roboto';

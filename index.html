@@ -13,6 +13,9 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous"  
         referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -20,7 +23,7 @@
     <header class=" header ">
         <div class="container navigation">
             <nav class="header-nav"> 
-                <a  href="./index.html" lang="en" class="header-logo" >
+                <a  href="./index.html" lang="en" class="header-logo animate__animated animate__bounce" >
                     <span class="logo-span">Web</span>Studio
                 </a>
                 <ul class="header-list list">
@@ -51,7 +54,7 @@
             <h1 class="hero-title">
                 Эффективные решения для вашего бизнеса
             </h1>
-            <button type="button" class="hero-btn">
+            <button data-modal-open type="button" class="hero-btn">
                 Заказать услугу
             </button> 
         </div>
@@ -59,7 +62,7 @@
     </section>
 
     <!--  Перечень особеннoстeй features-->
-             <!-- преимуществ Benefit--c
+             <!-- преимуществ Benefitc-->
     <section class="features">
         <div class="container ">
             <h2 class="visually-hidden">Преимущества </h2>
@@ -91,7 +94,7 @@
             </ul>
         </div> 
     </section>
-    <!--чем занимаемся- doing -->
+    <!-- чем занимаемся- doing -->
     <section class=" doing">
         <div class="container ">
             <h2 class=" doing-title">
@@ -320,8 +323,8 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-container">
+        <div class="footer-container container">
+            <div class=" adress-container ">
                 <a href="./index.html" lang="en" class="footer-logo">
                     <span class="logo-span">Web</span>Studio
                 </a>
@@ -329,7 +332,7 @@
                     <ul class="footer-list list">
                         <li class="footer-item">
                             <a href="https://goo.gl/maps/2USZwXQaz1WwdcCW7" target="_blank " rel="noopener nofollow"
-                                class="footer-adres link">Киев, пр-т Леси Украинки, 26</a>
+                                class="footer-adress link">Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="footer-item">
                             <a href="mailto:info@example.com" class="footer-link link">info@example.com</a>
@@ -377,8 +380,12 @@
                 </ul>
             </div>
         </div>
-
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script src="./js/modal.js"></script>
 </body>
 </html>
 
